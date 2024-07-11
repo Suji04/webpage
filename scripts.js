@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (currentPage == "") {
             console.log(currentPage);
             navLinks[0].classList.add('active');
+            return;
         } 
         if (link.href.includes(currentPage)) {
             link.classList.add('active');
