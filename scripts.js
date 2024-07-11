@@ -1,5 +1,6 @@
 // nav bar
 document.addEventListener("DOMContentLoaded", function() {
+    console.log(window.location.pathname);
     const currentPage = window.location.pathname.split("/").pop();
     const navLinks = document.querySelectorAll('nav ul li a');
 
