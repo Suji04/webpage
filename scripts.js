@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('nav ul li a');
 
     navLinks.forEach(link => {
-        if (currentPage == null) {
+        if (currentPage == "") {
+            console.log(currentPage);
             navLinks[0].classList.add('active');
         } 
         if (link.href.includes(currentPage)) {
@@ -42,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
         videoGallery.appendChild(container);
     });
 });
-
 
 
 // load blogs 
